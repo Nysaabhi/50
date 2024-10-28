@@ -42,51 +42,58 @@ main.container {
     padding-top: 10px; /* Adjust this value based on your header's height */
 }
 
-        .header {
-            padding: 10px;
-            background: rgba(0, 0, 0, 0.8);
-            backdrop-filter: blur(20px);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-            border-bottom: 1px solid rgba(255, 215, 0, 0.1);
-        }
+.header {
+    padding: 12px 20px;
+    background: #1a1a1f;  /* Dark, professional background */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #FFD700;  /* Solid gold border */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
 
-        .header-content {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+.header-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-        .logo {
-            font-size: 1.8em;
-            font-weight: 800;
-            background: var(--premium-gradient);
-            -webkit-background-clip: text;
-            color: transparent;
-            letter-spacing: 1px;
-        }
+.logo {
+    font-size: 1.8em;
+    font-weight: 800;
+    background: linear-gradient(135deg, #FFD700, #FDB931);  /* Royal gold gradient */
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 1.2px;
+}
 
-        .connect-wallet {
-            padding: 10px 20px;
-            background: var(--premium-gradient);
-            border: none;
-            border-radius: 25px;
-            color: var(--background-dark);
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
+.connect-wallet {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #FFD700, #FDB931);  /* Matching gold gradient */
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    border-radius: 6px;  /* More professional, less rounded */
+    color: #000000;  /* Black text for better contrast */
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.95em;
+    letter-spacing: 0.5px;
+}
 
-        .connect-wallet:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.2);
-        }
+.connect-wallet:hover {
+    transform: translateY(-1px);  /* Subtle lift */
+    background: linear-gradient(135deg, #FDB931, #FFD700);  /* Reversed gradient on hover */
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.15);
+}
 
+.connect-wallet:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(255, 215, 0, 0.1);
+}
 
 .search-container {
     margin-top: 100px; /* This helps offset the header position */
