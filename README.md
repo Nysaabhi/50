@@ -231,7 +231,7 @@ main.container {
     scrollbar-width: none;
     -ms-overflow-style: none;
     padding: 24px 0;
-    margin: 20px;
+    margin: 30px;
     gap: 0px;
 }
 
