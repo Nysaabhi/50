@@ -220,7 +220,6 @@ main.container {
     border-color: #ccc;
 }
 
-/* Filter Container Styles */
 .filter-container {
     display: flex;
     justify-content: flex-start;
@@ -232,7 +231,8 @@ main.container {
     -ms-overflow-style: none;
     padding: 24px 0;
     margin: 30px;
-    gap: 0px;
+    gap: 8px; /* Reduced gap between buttons */
+    width: calc(100% - 60px); /* Account for margins */
 }
 
 .filter-container::-webkit-scrollbar {
@@ -240,9 +240,9 @@ main.container {
 }
 
 .filter-btn {
-    padding: 14px 32px;
+    padding: 10px 20px; /* Reduced padding */
     font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    font-size: 14px; /* Reduced font size */
     font-weight: 500;
     border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 50px;
@@ -250,10 +250,12 @@ main.container {
     color: #fff;
     cursor: pointer;
     transition: all 0.2s ease;
-    margin-right: 12px;
+    margin-right: 8px; /* Reduced margin */
     flex-shrink: 0;
     text-transform: capitalize;
     letter-spacing: 0.4px;
+    min-width: calc(25% - 8px); /* Set minimum width to fit 4 buttons */
+    max-width: calc(25% - 8px); /* Set maximum width to fit 4 buttons */
 }
 
 .filter-btn:hover {
@@ -811,6 +813,38 @@ main.container {
     margin-top: 15px;
     border-top: 1px solid var(--border-color);
     font-size: 0.75em;
+}
+
+@media (max-width: 768px) {
+    .filter-container {
+        padding: 15px 0;
+        margin: 15px;
+        width: calc(100% - 30px); /* Adjusted for smaller margins */
+    }
+
+    .filter-btn {
+        padding: 8px 12px;
+        font-size: 12px;
+        margin-right: 6px;
+        min-width: calc(25% - 6px); /* Adjusted for smaller margins */
+        max-width: calc(25% - 6px);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .filter-btn {
+        padding: 12px 24px;
+        font-size: 16px;
+        margin-right: 15px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .filter-btn {
+        padding: 20px 40px;
+        font-size: 20px;
+        margin-right: 20px;
+    }
 }
 
 @media (max-width: 768px) {
