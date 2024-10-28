@@ -62,7 +62,7 @@ main.container {
     align-items: center;
 }
 
-.header-title {
+.header-ink {
     font-size: 1.8em;
     font-weight: 900;
     background: linear-gradient(135deg, #FFD700, #FDB931);  /* Royal gold gradient */
@@ -1285,7 +1285,7 @@ body > h1:first-of-type:not(.heading) {
     <main class="container">
         <header class="header">
             <div class="header-content">
-                <div class="header-title">GENESIS</div>
+                <div class="header-ink">Nysa</div>
                 <button class="connect-wallet">
                     <i class="fas fa-wallet"></i>
                     Connect
