@@ -242,7 +242,7 @@ main.container {
 .filter-btn {
     padding: 10px 20px; /* Reduced padding */
     font-family: 'Poppins', sans-serif;
-    font-size: 7px; /* Reduced font size */
+    font-size: 12px; /* Reduced font size */
     font-weight: 500;
     border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 50px;
