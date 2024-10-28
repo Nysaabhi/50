@@ -1285,7 +1285,7 @@ body > h1:first-of-type:not(.heading) {
     <main class="container">
         <header class="header">
             <div class="header-content">
-                <div class="logo">GENESIS</div>
+                <div class="header-title">GENESIS</div>
                 <button class="connect-wallet">
                     <i class="fas fa-wallet"></i>
                     Connect
