@@ -39,7 +39,7 @@ body {
 }
 
 main.container {
-    padding-top: 40px; /* Adjust this value based on your header's height */
+    padding-top: 10px; /* Adjust this value based on your header's height */
 }
 
         .header {
