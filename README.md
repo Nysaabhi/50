@@ -220,6 +220,7 @@ main.container {
     border-color: #ccc;
 }
 
+/* Filter Container Styles */
 .filter-container {
     display: flex;
     justify-content: flex-start;
@@ -231,8 +232,7 @@ main.container {
     -ms-overflow-style: none;
     padding: 24px 0;
     margin: 30px;
-    gap: 2px; /* Reduced gap between buttons */
-    width: calc(100% - 60px); /* Account for margins */
+    gap: 0px;
 }
 
 .filter-container::-webkit-scrollbar {
@@ -240,9 +240,9 @@ main.container {
 }
 
 .filter-btn {
-    padding: 10px 20px; /* Reduced padding */
+    padding: 14px 32px;
     font-family: 'Poppins', sans-serif;
-    font-size: 12px; /* Reduced font size */
+    font-size: 15px;
     font-weight: 500;
     border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 50px;
@@ -250,12 +250,10 @@ main.container {
     color: #fff;
     cursor: pointer;
     transition: all 0.2s ease;
-    margin-right: 8px; /* Reduced margin */
+    margin-right: 12px;
     flex-shrink: 0;
     text-transform: capitalize;
     letter-spacing: 0.4px;
-    min-width: calc(25% - 8px); /* Set minimum width to fit 4 buttons */
-    max-width: calc(25% - 8px); /* Set maximum width to fit 4 buttons */
 }
 
 .filter-btn:hover {
@@ -816,38 +814,6 @@ main.container {
 }
 
 @media (max-width: 768px) {
-    .filter-container {
-        padding: 15px 0;
-        margin: 15px;
-        width: calc(100% - 30px); /* Adjusted for smaller margins */
-    }
-
-    .filter-btn {
-        padding: 8px 12px;
-        font-size: 7px;
-        margin-right: 6px;
-        min-width: calc(25% - 6px); /* Adjusted for smaller margins */
-        max-width: calc(25% - 6px);
-    }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-    .filter-btn {
-        padding: 9px 18px;
-        font-size: 7px;
-        margin-right: 15px;
-    }
-}
-
-@media (min-width: 1025px) {
-    .filter-btn {
-        padding: 18px 36px;
-        font-size: 14px;
-        margin-right: 20px;
-    }
-}
-
-@media (max-width: 768px) {
     .heading {
         font-size: 2.5rem;
     }
@@ -871,7 +837,7 @@ main.container {
 
     .filter-btn {
         padding: 8px 16px;
-        font-size: 7px;
+        font-size: 14px;
         margin-right: 10px;
     }
 
