@@ -813,7 +813,8 @@ main.container {
     font-size: 0.75em;
 }
 
-@media (max-width: 1024px) {
+
+@media (max-width: 768px) {
     .heading {
         font-size: 2.5rem;
     }
@@ -836,11 +837,9 @@ main.container {
     }
 
     .filter-btn {
-        padding: 8px 20px; /* Increased horizontal padding from 16px to 20px */
+        padding: 8px 16px;
         font-size: 14px;
-        margin-right: 12px; /* Slightly increased from 10px */
-        max-width: 100%;
-        white-space: nowrap; /* Prevent text wrapping */
+        margin-right: 10px;
     }
 
     .card {
@@ -1272,6 +1271,7 @@ body > h1:first-of-type:not(.heading) {
 .position-relative h1:first-child {
     display: none !important;
 }
+
 </style>
 </head>
 <body>
