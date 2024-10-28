@@ -839,7 +839,7 @@ main.container {
         padding: 8px 20px; /* Increased horizontal padding from 16px to 20px */
         font-size: 14px;
         margin-right: 12px; /* Slightly increased from 10px */
-        min-width: 120px; /* Added minimum width to ensure buttons are wide enough */
+        max-width: 100%;
         white-space: nowrap; /* Prevent text wrapping */
     }
 
