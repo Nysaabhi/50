@@ -96,7 +96,7 @@ main.container {
 }
 
 .search-container {
-    margin-top: 100px; /* This helps offset the header position */
+    margin-top: 80px; /* This helps offset the header position */
     position: relative;
     width: 95%; /* Default for mobile */
     margin-left: auto;
