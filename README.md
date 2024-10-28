@@ -231,7 +231,7 @@ main.container {
     -ms-overflow-style: none;
     padding: 24px 0;
     margin: 30px;
-    gap: 8px; /* Reduced gap between buttons */
+    gap: 2px; /* Reduced gap between buttons */
     width: calc(100% - 60px); /* Account for margins */
 }
 
@@ -242,7 +242,7 @@ main.container {
 .filter-btn {
     padding: 10px 20px; /* Reduced padding */
     font-family: 'Poppins', sans-serif;
-    font-size: 14px; /* Reduced font size */
+    font-size: 7px; /* Reduced font size */
     font-weight: 500;
     border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 50px;
@@ -824,7 +824,7 @@ main.container {
 
     .filter-btn {
         padding: 8px 12px;
-        font-size: 12px;
+        font-size: 7px;
         margin-right: 6px;
         min-width: calc(25% - 6px); /* Adjusted for smaller margins */
         max-width: calc(25% - 6px);
@@ -833,16 +833,16 @@ main.container {
 
 @media (min-width: 769px) and (max-width: 1024px) {
     .filter-btn {
-        padding: 12px 24px;
-        font-size: 16px;
+        padding: 9px 18px;
+        font-size: 7px;
         margin-right: 15px;
     }
 }
 
 @media (min-width: 1025px) {
     .filter-btn {
-        padding: 20px 40px;
-        font-size: 20px;
+        padding: 18px 36px;
+        font-size: 14px;
         margin-right: 20px;
     }
 }
@@ -871,7 +871,7 @@ main.container {
 
     .filter-btn {
         padding: 8px 16px;
-        font-size: 14px;
+        font-size: 7px;
         margin-right: 10px;
     }
 
