@@ -43,7 +43,7 @@ main.container {
 }
 
         .header {
-            padding: 20px;
+            padding: 10px;
             background: rgba(0, 0, 0, 0.8);
             backdrop-filter: blur(20px);
             position: fixed;
