@@ -62,9 +62,9 @@ main.container {
     align-items: center;
 }
 
-.logo {
+.header-title {
     font-size: 1.8em;
-    font-weight: 800;
+    font-weight: 900;
     background: linear-gradient(135deg, #FFD700, #FDB931);  /* Royal gold gradient */
     -webkit-background-clip: text;
     color: transparent;
@@ -75,7 +75,7 @@ main.container {
     padding: 12px 24px;
     background: linear-gradient(135deg, #FFD700, #FDB931);  /* Matching gold gradient */
     border: 1px solid rgba(255, 215, 0, 0.3);
-    border-radius: 6px;  /* More professional, less rounded */
+    border-radius: 50px;  /* More professional, less rounded */
     color: #000000;  /* Black text for better contrast */
     font-weight: 600;
     cursor: pointer;
@@ -94,6 +94,7 @@ main.container {
     transform: translateY(0);
     box-shadow: 0 2px 8px rgba(255, 215, 0, 0.1);
 }
+
 
 .search-container {
     margin-top: 80px; /* This helps offset the header position */
