@@ -230,7 +230,7 @@ main.container {
     scrollbar-width: none;
     -ms-overflow-style: none;
     padding: 24px 0;
-    margin-bottom: 16px;
+    margin: 20px;
     gap: 0px;
 }
 
