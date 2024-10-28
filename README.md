@@ -813,7 +813,7 @@ main.container {
     font-size: 0.75em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .heading {
         font-size: 2.5rem;
     }
