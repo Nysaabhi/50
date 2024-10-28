@@ -220,7 +220,6 @@ main.container {
     border-color: #ccc;
 }
 
-/* Filter Container Styles */
 .filter-container {
     display: flex;
     justify-content: flex-start;
@@ -231,7 +230,7 @@ main.container {
     scrollbar-width: none;
     -ms-overflow-style: none;
     padding: 24px 0;
-    margin: 30px;
+    margin-bottom: 16px;
     gap: 0px;
 }
 
@@ -271,7 +270,7 @@ main.container {
     outline: none;
     ring: 2px solid rgba(74, 144, 226, 0.5);
 }
-
+    
 .separator-line {
     width: 100%;
     height: 1px;
