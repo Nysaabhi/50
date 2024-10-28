@@ -1,4 +1,3 @@
-# 50
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -39,38 +38,56 @@ body {
     padding: 10px;
 }
 
-.header {
+.container {
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-    margin-top: 500px;
+    box-sizing: border-box;
+    overflow-y: auto;
 }
 
-.heading {
-    font-size: 4rem;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 250px;
-    background: #ff0073;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: gradientShift 10s ease infinite;
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    border-bottom: 1px solid #333;
 }
 
-.subheading {
-    text-align: center;
-    font-size: 1.2rem;
-    color: rgb(255, 0, 0);
-    margin-top: 5px;
+.header-title {
+    color: #FFD700;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
 }
 
-@keyframes gradientShift {
-    0%, 100% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
+.connect-button {
+    background-color: #FFD700;
+    color: #000;
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.connect-button:hover {
+    background-color: #FFC800;
+    transform: translateY(-2px);
 }
 
 /* Search Container and Bar Styles */
 .search-container {
-    margin-bottom: 30px;
+    margin-top: 100px;
     position: relative;
     width: 95%; /* Default for mobile */
     margin-left: auto;
@@ -211,7 +228,7 @@ body {
     scrollbar-width: none;
     -ms-overflow-style: none;
     padding: 24px 0;
-    margin-bottom: 16px;
+    margin: 20px;
     gap: 0px;
 }
 
@@ -1255,10 +1272,8 @@ body > h1:first-of-type:not(.heading) {
 <body>
     <main class="container">
         <header class="header">
-            <h1 class="heading">
-                <span id="n">N</span><span id="y">y</span><span id="s">s</span><span id="a">a</span>
-            </h1>
-            <p class="subheading">Innovate. Create. Inspire.</p>
+            <h1 class="header-title">GENESIS</h1>
+            <button class="connect-button">Connect</button>
         </header>
         <div class="search-container">
             <i class="fas fa-search search-icon"></i>
