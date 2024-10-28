@@ -26,72 +26,75 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
 }
 
 .container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 10px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 10px;
 }
 
-.container {
-    flex: 1;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow-y: auto;
+main.container {
+    padding-top: 40px; /* Adjust this value based on your header's height */
 }
 
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #000;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-    border-bottom: 1px solid #333;
-}
+        .header {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(20px);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+        }
 
-.header-title {
-    color: #FFD700;
-    font-size: 28px;
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
-}
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-.connect-button {
-    background-color: #FFD700;
-    color: #000;
-    padding: 10px 25px;
-    border-radius: 25px;
-    border: none;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
+        .logo {
+            font-size: 1.8em;
+            font-weight: 800;
+            background: var(--premium-gradient);
+            -webkit-background-clip: text;
+            color: transparent;
+            letter-spacing: 1px;
+        }
 
-.connect-button:hover {
-    background-color: #FFC800;
-    transform: translateY(-2px);
-}
+        .connect-wallet {
+            padding: 10px 20px;
+            background: var(--premium-gradient);
+            border: none;
+            border-radius: 25px;
+            color: var(--background-dark);
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
 
-/* Search Container and Bar Styles */
+        .connect-wallet:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.2);
+        }
+
+
 .search-container {
-    margin-top: 100px;
+    margin-top: 100px; /* This helps offset the header position */
     position: relative;
     width: 95%; /* Default for mobile */
     margin-left: auto;
     margin-right: auto;
+    z-index: 10; /* Ensure it stays above other content */
 }
 
 .search-bar {
@@ -1272,10 +1275,15 @@ body > h1:first-of-type:not(.heading) {
 <body>
     <main class="container">
         <header class="header">
-            <h1 class="header-title">GENESIS</h1>
-            <button class="connect-button">Connect</button>
+            <div class="header-content">
+                <div class="logo">GENESIS</div>
+                <button class="connect-wallet">
+                    <i class="fas fa-wallet"></i>
+                    Connect
+                </button>
+            </div>
         </header>
-        <div class="search-container">
+                                    <div class="search-container">
             <i class="fas fa-search search-icon"></i>
             <input type="text" class="search-bar" id="searchBar" placeholder="Search for cryptocurrencies, NFTs, people, or smart contracts...">
             <div class="search-suggestions" id="searchSuggestions"></div>
