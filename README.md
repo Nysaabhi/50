@@ -606,6 +606,16 @@ body > h1:first-of-type:not(.heading) {
             color: var(--text-light);
         }
 
+        .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Adjust the spacing between elements as needed */
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
         .submit-booking {
             width: 100%;
             padding: 12px;
@@ -773,15 +783,17 @@ body > h1:first-of-type:not(.heading) {
                 <label>Pincode</label>
                 <input type="text" id="pincodeInput" placeholder="Enter pincode (optional)" />
             </div>
-            <div class="form-group">
-                <label>Date</label>
-                <input type="text" id="dateInput" placeholder="Select date" />
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Date</label>
+                    <input type="text" id="dateInput" placeholder="Select date" />
+                </div>
+                <div class="form-group">
+                    <label>Time Slot</label>
+                    <input type="text" id="timeInput" placeholder="Select time slot" />
+                </div>
             </div>
-            <div class="form-group">
-                <label>Time Slot</label>
-                <input type="text" id="timeInput" placeholder="Select time slot" />
-            </div>
-            <button class="submit-booking" id="submitBooking">Book Now</button>
+                        <button class="submit-booking" id="submitBooking">Book Now</button>
         </div>
     </div>
 
