@@ -801,7 +801,7 @@ body > h1:first-of-type:not(.heading) {
             <div class="nav-item" data-page="call">
                 <a href="tel:9111478356">
                     <i class="fas fa-phone"></i>
-                </a>
+                </a> 
                 <span>Call</span>
             </div>
             <div class="nav-item whatsapp-item" data-page="chat">
