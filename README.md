@@ -799,13 +799,13 @@ body > h1:first-of-type:not(.heading) {
                 <span>Subscription</span>
             </div>
             <div class="nav-item" data-page="call">
-                <a href="tel:911478356">
+                <a href="tel:9111478356">
                     <i class="fas fa-phone"></i>
                 </a>
                 <span>Call</span>
             </div>
             <div class="nav-item whatsapp-item" data-page="chat">
-                <a href="https://wa.me/911478356" target="_blank">
+                <a href="https://wa.me/9111478356" target="_blank">
                     <i class="fas fa-message"></i>
                 </a>
                 <span>WhatsApp</span>
