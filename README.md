@@ -139,12 +139,24 @@ body {
 .message-avatar {
     width: 36px;
     height: 36px;
+    min-width: 36px;
+    min-height: 36px;
     background: rgba(255, 215, 0, 0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--primary-color);
+    flex-shrink: 0; /* Prevents shrinking */
+}
+
+.message {
+    display: flex;
+    gap: 10px;
+    max-width: 90%; /* Increased for better mobile visibility */
+    margin-bottom: 16px;
+    animation: messageSlide 0.3s ease-out;
+    align-items: flex-start; /* Aligns avatar with message top */
 }
 
 .message-content {
