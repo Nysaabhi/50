@@ -844,7 +844,7 @@ body > h1:first-of-type:not(.heading) {
                 <a href="listings.html">
                     <i class="fas fa-tasks"></i>
                 </a>
-                <span>Listings</span>
+                <span>Listing</span>
             </div>
         </div>
     </nav>
