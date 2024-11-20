@@ -338,7 +338,7 @@ body > h1:first-of-type:not(.heading) {
 
 .category-card {
     flex: 0 0 calc(25% - 15px); /* Account for gap */
-    min-width: 250px; /* Minimum width for better mobile experience */
+    max-width: 1400px;
     scroll-snap-align: start;
     border: 1px solid rgba(255, 215, 0, 0.2);
     background: rgba(255, 215, 0, 0.1);
