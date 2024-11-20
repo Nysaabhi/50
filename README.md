@@ -318,37 +318,48 @@ body > h1:first-of-type:not(.heading) {
 }
  
 .category-carousel {
-            display: flex;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
-            scroll-behavior: smooth;
-            -webkit-overflow-scrolling: touch;
-            padding: 20px;
-        }
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding: 20px;
+    gap: 15px;
+    /* Hide scrollbar but keep functionality */
+    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+}
 
-        .category-card {
-            flex: 0 0 25%;
-            scroll-snap-align: start;
-            border: 1px solid rgba(255, 215, 0, 0.2);
-            margin-right: 15px;
-            background: rgba(255, 215, 0, 0.1);
-            border-radius: 12px;
-            padding: 20px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-align: center;
-        }
+/* Hide scrollbar for Chrome, Safari and Opera */
+.category-carousel::-webkit-scrollbar {
+    display: none;
+}
 
-        .category-card:hover {
-            transform: translateY(-2px);
-            background: rgba(255, 215, 0, 0.2);
-        }
+.category-card {
+    flex: 0 0 calc(25% - 15px); /* Account for gap */
+    min-width: 250px; /* Minimum width for better mobile experience */
+    scroll-snap-align: start;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    background: rgba(255, 215, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: center;
+}
 
-        .category-icon {
-            font-size: 2em;
-            color: var(--primary-color);
-            margin-bottom: 10px;
-        }
+.category-card:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 215, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.category-icon {
+    font-size: 2em;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
 
         .page-grid {
             display: grid;
